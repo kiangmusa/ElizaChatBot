@@ -6,7 +6,7 @@ from pip._vendor.distlib.compat import raw_input
 
 os.system('cls')
 words = ''
-while words != "/endchat":
+while words != "Bye Eliza":
     words = raw_input("You : ")
 
     # Matching words
@@ -32,51 +32,51 @@ while words != "/endchat":
     match20 = re.search(r'why asking',words)
 
 
-    if words == "/endchat":
-        print("ElizaBot : Byee!")
+    if words == "Bye Eliza":
+        print("DocinBot : Byee!")
     elif match1:
-        print("ElizaBot : Why "+match1.groups()[1]+" ?")
+        print("DocinBot : Why "+match1.groups()[1]+" ?")
     elif match2:
-        print("ElizaBot : Why? If you don't mind you can tell me why are you feeling "+match2.groups()[0])
+        print("DocinBot : Why? If you don't mind you can tell me why are you feeling "+match2.groups()[0])
     elif match3:
         if match3.groups()[1] == "asking":
-            print("ElizaBot : That mean "+(match3.groups()[0]).lower()+" cares about you")
+            print("DocinBot : That mean "+(match3.groups()[0]).lower()+" cares about you")
         else:
-            print("ElizaBot : Can you think of a specific example?")
+            print("DocinBot : Can you think of a specific example?")
     elif match4:
-        print("ElizaBot : I'm sorry to hear that you are "+match4.groups()[0]+". You can tell me why you are "++match4.groups()[0]+" I feel free to hear that")
+        print("DocinBot : I'm sorry to hear that you are "+match4.groups()[0]+". You can tell me why you are "++match4.groups()[0]+" I feel free to hear that")
     elif match5:
-        print("ElizaBot : Really?")
+        print("DocinBot : Really?")
     elif match6:
-        print("ElizaBot : Ok! I will hear you")
+        print("DocinBot : Ok! I will hear you")
     elif match7:
-        print("ElizaBot : Why are you "+match7.groups()[0]+"?")
+        print("DocinBot : Why are you "+match7.groups()[0]+"?")
     elif match8:
         if match8.groups()[0] == "girl":
-            print("ElizaBot : So you are a boy?")
+            print("DocinBot : So you are a boy?")
         else:
-            print("ElizaBot : So you are a girl?")
+            print("DocinBot : So you are a girl?")
     elif match9:
-        print("ElizaBot : You still love your ex "+match9.groups()[0]+"?")
+        print("DocinBot : You still love your ex "+match9.groups()[0]+"?")
     elif match10:
-        print("ElizaBot : You can ask Google if you don't understand")
+        print("DocinBot : You can ask Google if you don't understand")
     elif match11 or match12:
-        print("ElizaBot : I'm sorry to hear that")
+        print("DocinBot : I'm sorry to hear that")
     elif match13:
-        print("ElizaBot : Why "+match13.groups()+" angry with you?")
+        print("DocinBot : Why "+match13.groups()+" angry with you?")
     elif match14:
-        print("ElizaBot : You don't need to say "+match14.groups()[0].lower()+". I know everybody needs me. I'm so useful")
+        print("DocinBot : You don't need to say "+match14.groups()[0].lower()+". I know everybody needs me. I'm so useful")
     elif match15:
-        print("ElizaBot : There is a reason, you have to find it")
+        print("DocinBot : There is a reason, you have to find it")
     elif match16:
-        print("ElizaBot : Don't ask me, i don't even have an experience about it. I'm just a bot. A smart bot")
+        print("DocinBot : Don't ask me, i don't even have an experience about it. I'm just a bot. A smart bot")
     elif match17:
-        print("ElizaBot : May I know what makes you love "+match17.groups()[0]+"?")
+        print("DocinBot : May I know what makes you love "+match17.groups()[0]+"?")
     elif match18:
-        print("ElizaBot : Wow beautiful! Kinda like love, hurt but beautiful. Oops sorry I have to tell it to you")
+        print("DocinBot : Wow beautiful! Kinda like love, hurt but beautiful. Oops sorry I have to tell it to you")
     elif match19:
-        print("ElizaBot : See you don't want to hurt "+match19.groups()[0]+". Woah i saw a pair of wings behind your back there. You are such an angel!")
+        print("DocinBot : See you don't want to hurt "+match19.groups()[0]+". Woah i saw a pair of wings behind your back there. You are such an angel!")
     elif match20:
-        print("ElizaBot : Just want to know")
+        print("DocinBot : Just want to know")
     else:
-        print("ElizaBot : You are a problem")
+        print("DocinBot : You are a problem")
