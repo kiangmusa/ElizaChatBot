@@ -29,7 +29,7 @@ while words != "/endchat":
     match17 = re.search(r'I love (him|her)',words)
     match18 = re.search(r'beautiful',words)
     match19 = re.search(r'don\'t want to hurt+.(him|her)',words)
-    match20 = re.search(r'\W',words)
+    match20 = re.search(r'why asking',words)
 
 
     if words == "/endchat":
@@ -52,7 +52,10 @@ while words != "/endchat":
     elif match7:
         print("ElizaBot : Why are you "+match7.groups()[0]+"?")
     elif match8:
-        print("ElizaBot : So you are a "+match8.groups()[0]+"?")
+        if match8.groups()[0] == "girl":
+            print("ElizaBot : So you are a boy?")
+        else:
+            print("ElizaBot : So you are a girl?")
     elif match9:
         print("ElizaBot : You still love your ex "+match9.groups()[0]+"?")
     elif match10:
@@ -74,6 +77,6 @@ while words != "/endchat":
     elif match19:
         print("ElizaBot : See you don't want to hurt "+match19.groups()[0]+". Woah i saw a pair of wings behind your back there. You are such an angel!")
     elif match20:
-        print("ElizaBot : I know right. Sometimes I'm just being a silly. LOL")
+        print("ElizaBot : Just want to know")
     else:
         print("ElizaBot : You are a problem")
